@@ -1,4 +1,7 @@
-let tl = gsap.timeline();
+let tl = gsap.timeline({
+    repeat: -1,
+    repeatDelay: 2.5,
+});
 
 // rotate (elena if you are looking at this.. if you use gsap.to, its outside of the 'timeline', so here the rotation will just happen forever since I have repeat set to -1 (infinity))
 gsap.to("svg", {
@@ -13,14 +16,15 @@ gsap.to("svg", {
 tl.to("svg", {
     width: "75%", 
     opacity: 1, 
-    duration: 5, 
-    ease: "back.out(1.7)"
+    duration: 2.5, 
+    ease: Linear.easeNone
 });
 
 // shrink back down + lower opacity
 tl.to("svg", {
+    delay: 2.5,
     width: "50%", 
-    opacity: .5, 
-    duration: 8, 
-    ease: "back.out(1.7)"
-}, "8");
+    opacity: .3, 
+    duration: 2.5, 
+    ease: Linear.easeNone
+});
