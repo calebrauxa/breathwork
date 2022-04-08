@@ -1,6 +1,6 @@
 let tl = gsap.timeline();
 
-// rotate
+// rotate (elena if you are looking at this.. if you use gsap.to, its outside of the 'timeline', so here the rotation will just happen forever since I have repeat set to -1 (infinity))
 gsap.to("svg", {
     duration: 10, 
     rotation: 360, 
@@ -8,6 +8,7 @@ gsap.to("svg", {
     ease: Linear.easeNone
 });
 
+// then you can use the timeline (tl.to) to do things in sequence with one another
 // grow in size + opacity to full
 tl.to("svg", {
     width: "75%", 
