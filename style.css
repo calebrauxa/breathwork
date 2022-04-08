@@ -17,7 +17,7 @@ body {
 
 svg {
     opacity: .3;
-    width: 50%;
+    width: 25%;
     height: auto;
     position:fixed;
     /* transform-origin: center center; */

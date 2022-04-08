@@ -14,7 +14,7 @@ gsap.to("svg", {
 // then you can use the timeline (tl.to) to do things in sequence with one another
 // grow in size + opacity to full
 tl.to("svg", {
-    width: "75%", 
+    width: "45%", 
     opacity: 1, 
     duration: 2.5, 
     ease: Linear.easeNone
@@ -23,7 +23,7 @@ tl.to("svg", {
 // shrink back down + lower opacity
 tl.to("svg", {
     delay: 2.5,
-    width: "50%", 
+    width: "25%", 
     opacity: .3, 
     duration: 2.5, 
     ease: Linear.easeNone
