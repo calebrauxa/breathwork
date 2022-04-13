@@ -10,9 +10,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 50px;
 }
 
-#holdit {z-index: 999; opacity: 0; color: #F9703E;}
+#holdit {
+    z-index: 999; 
+    opacity: .75; 
+    color: #F9703E;
+    font-size: 16px;
+    font-family: 'Flamenco', cursive;
+}
 
 /* g {
     opacity: .8;
@@ -25,4 +32,16 @@ svg {
     position:fixed;
     /* transform-origin: center center; */
     /* top: 20px; */
+}
+
+
+.flash {
+    /* transition: all .25s; */
+    animation: mymove .5s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes mymove {
+  from {fill: #F5F7FA;}
+  to {fill: #ffb488;}
 }
